@@ -1,7 +1,7 @@
 # PhotoViewer
 Photo Viewing application that utlizes a LinkedList Data Structure to maximize efficiency for the viewing, adding, and removal of photos in the application.
 
-A personal project created simply for the educational purpose of learning the applications of the linked list data structure.
+A personal project created simply for the educational purpose of learning the linked list data structure through a real world application use.
 
 Benefits of using linked list for this project:
 
