@@ -18,8 +18,7 @@
          <left>
             <Accordion BorderPane.alignment="CENTER">
               <panes>
-                <TitledPane animated="false" minWidth="-Infinity" text="untitled 1" />
-                <TitledPane animated="false" text="untitled 2" />
+                <TitledPane fx:id="listPane" animated="false" minWidth="-Infinity" text="Pictures Dir" />
               </panes>
             </Accordion>
          </left>
@@ -27,7 +26,7 @@
             <TextField fx:id="textfield" alignment="TOP_CENTER" editable="false" prefHeight="31.0" prefWidth="627.0" text="Title" BorderPane.alignment="CENTER" />
          </top>
          <center>
-            <ImageView fx:id="image" fitHeight="315.0" fitWidth="488.0" pickOnBounds="true" />
+            <ImageView fx:id="imageView" fitHeight="315.0" fitWidth="488.0" pickOnBounds="true" />
          </center>
       </BorderPane>
       <HBox alignment="BOTTOM_CENTER" layoutX="20.0" layoutY="346.0" prefHeight="48.0" prefWidth="588.0">

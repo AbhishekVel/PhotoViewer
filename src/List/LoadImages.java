@@ -10,10 +10,9 @@ import javafx.scene.image.Image;
 
 public class LoadImages {
 	
-	private static ArrayList<Image> imageBase = new ArrayList<>();
 	
 	static final String[] EXTENSIONS = new String[] {
-			"png", "jpg"
+			"png", "jpg", "JPG"
 	};
 	
 	static final FilenameFilter IMAGE_FILTER = new FilenameFilter() {
@@ -29,21 +28,32 @@ public class LoadImages {
 		}
 	};
 	
+
+	private static ImagesLinkedList list;
+	
 	public static void load(File address) {
 		if (address.isDirectory()) {
+			list = new ImagesLinkedList();
 			for (final File f: address.listFiles(IMAGE_FILTER)) {
 				try {
-					imageBase.add(new Image(f.toURI().toString()));
-					System.out.println(f.getAbsolutePath());
+					list.add(new Image(f.toURI().toString()));
 				} catch (Exception e) {
 					System.exit(1);
 					System.out.println("Invalid Input");
 				}
 			}
+		} else {
+			System.out.println("ERROR OCCURRED");
 		}
 	}
 	
-	public static Image getRandomImage() {
-		return imageBase.get((int) (Math.random() * imageBase.size()));
+	public static ImagesLinkedList getList() {
+		return list;
+	}
+
+
+	
+	public static ImagesLinkedList getArrayList() {
+		return null;
 	}
 }
