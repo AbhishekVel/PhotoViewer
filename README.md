@@ -19,3 +19,10 @@ Usage of .next or .prev in order to efficiently transition to the previous/next 
 GUI:
 Used external libraries for the GUI to make the User Interface aesthetically pleasing.
 
+
+A few pictures of the application:
+
+
+![Alt text](https://i.gyazo.com/1c2742a7671b25cc99e65bb7ce290878.png "Image")
+![Alt text](https://i.gyazo.com/f41f7b165096316c65a7ece281cd6f0c.png "Image")
+![Alt text](https://i.gyazo.com/2a935a24341f7540a6acc155214c7b34.png "Image")
